@@ -122,7 +122,7 @@ button{
 .foot a{
     color: red;
     text-decoration: none;
-    font-weight: 500;
+    font-weight:bold;
 }
 
 
@@ -143,7 +143,6 @@ button{
 
 .head{
     text-align: center;
-    margin-bottom: 15px;
     margin: 7%;
 }
 .head h1{
@@ -152,7 +151,7 @@ button{
 }
 .head p{
     line-height: 1.6;
-    font-size: 12px;
+    font-size: 13px;
 
 }
 
