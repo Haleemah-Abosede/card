@@ -143,15 +143,16 @@ button{
 
 .head{
     text-align: center;
-    margin: auto;
-    margin: 12%;
+    font-size: 12px;
+    margin: 7%;
 }
 .head h1{
     font-size: 30px;
     font-weight: 600;
 }
 .head p{
-    line-height: 1.4;
+    line-height: 1.6;
+    margin-bottom: 15px;
 
 }
 
