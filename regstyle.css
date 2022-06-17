@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(bg-intro-desktop.png);
+    font-family: Poppins;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1440px;
+    width: 80%;
+    margin: auto;
+}
+
+.head{
+    color: white;
+    margin-left: 30px;
+}
+
+.head h1{
+    font-weight:700;
+    font-size: 50px;
+    line-height: 1.0;
+    margin-bottom: 20px;
+}
+
+.head p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.reg{
+    text-align: center;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    max-width: 450px;
+    height: 100%;
+    width: 100%;  
+
+}
+
+.reg form{
+    padding: 2em;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 6px 0 hsla(0, 0%, 0%, 0.3);
+    max-width: 450px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.reg-box{
+    display: block;
+    padding: 10px;
+    margin:15px  0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.reg-box input:focus, .reg-box input:valid{
+    border: 1px thin hsl(248, 32%, 49%);
+}
+
+.reg-box input:invalid{
+    background-image: url(icon-error.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border-color: hsl(0, 100%, 74%);
+}
+
+.info{
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    margin-top: 15%;
+    margin-bottom: 20px;
+    padding:15px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 6px 0 hsla(0, 0%, 0%, 0.3);;
+}
+
+
+button{
+    width: 100%;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px;
+    margin: auto 0 10px 0;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 1px 2px 0 hsl(154, 59%, 40%);
+    cursor: pointer;
+}
+ button:active{
+     box-shadow: 0 3px hsl(154, 59%, 35%);
+ }
+.foot{
+    font-size: 11px;
+    text-align: center;
+}
+.foot a{
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+@media(max-width:375px){
+    body{
+    background-image:url("bg-intro-mobile.png");
+    background-size: cover;
+    }
+    main{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+    margin-right: 15%;
+    height: 100%;
+}
+
+.head{
+    text-align: center;
+    margin: auto;
+    margin: 12%;
+}
+.head h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.head p{
+    line-height: 1.4;
+
+}
+
+.info{
+    margin-top: 0;
+    padding: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+    .reg{
+        max-width: 100%;
+        margin: auto;
+        margin-left: 0%;
+    }
+
+    form .reg-box{
+        width: 100%;
+        margin-bottom: 15px;
+    
+    }
+    button{
+        padding: 15px;
+        box-shadow: 0 4px 0 hsl(154, 59%, 35%);
+    }
+}
